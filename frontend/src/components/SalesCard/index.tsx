@@ -16,7 +16,7 @@ function SalesCard() {
 
 
   useEffect(() => {
-    axios.get("http://localhost:8080/sales")
+    axios.get(`${BASE_URL}/sales`)
       .then(response => {
         console.log(response.data);
       })
